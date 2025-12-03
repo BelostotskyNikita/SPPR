@@ -1,0 +1,5 @@
+﻿@model WEB_353502.UI.Models.CartViewModel
+
+<a class="navbar-text ms-auto" asp-area="" asp-controller="Cart" asp-action="Index">
+    @Model.TotalAmount.ToString("N2") руб <i class="bi bi-cart"></i> (@Model.ItemsCount)
+</a>

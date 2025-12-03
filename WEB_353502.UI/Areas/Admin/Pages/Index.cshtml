@@ -1,0 +1,73 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h1>Лабораторная работа 1</h1>
+
+<!-- Упорядоченный список с заглавными буквами -->
+<h2>Список</h2>
+<ol type="A">
+    <li>элемент 1 списка</li>
+    <li>элемент 2 списка</li>
+</ol>
+
+<hr>
+
+<!-- Форма -->
+<h2>Форма</h2>
+<form method="post" class="row g-3">
+    <!-- Чекбоксы -->
+    <div class="col-12">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="checkbox1" id="checkbox1" value="true">
+            <label class="form-check-label" for="checkbox1">
+                Чек-бокс 1
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="checkbox2" id="checkbox2" value="true" checked>
+            <label class="form-check-label" for="checkbox2">
+                Чек-бокс 2
+            </label>
+        </div>
+    </div>
+
+    <!-- Радио-кнопки -->
+    <div class="col-12">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="radioGroup" id="radio1" value="radio1">
+            <label class="form-check-label" for="radio1">
+                Радио-1
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="radioGroup" id="radio2" value="radio2" checked>
+            <label class="form-check-label" for="radio2">
+                Радио-2
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="radioGroup" id="radio3" value="radio3">
+            <label class="form-check-label" for="radio3">
+                Радио-3
+            </label>
+        </div>
+    </div>
+
+    <!-- Поле логина и пароля в одной колонке -->
+    <div class="col-12">
+        <div class="mb-3">
+            <label for="login" class="form-label"><strong>Логин:</strong></label>
+            <input type="text" class="form-control" name="login" id="login" placeholder="Введите имя">
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label"><strong>Пароль:</strong></label>
+            <input type="password" class="form-control" name="password" id="password" placeholder="Введите пароль">
+        </div>
+    </div>
+
+    <!-- Кнопка отправки -->
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Отправить</button>
+    </div>
+</form>
