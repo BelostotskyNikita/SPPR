@@ -1,6 +1,0 @@
-﻿@WEB_253503_Belostotsky.API_HostAddress = http://localhost:5047
-
-GET {{WEB_253503_Belostotsky.API_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
