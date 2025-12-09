@@ -1,0 +1,32 @@
+﻿ <!-- Информация пользователя -->
+@await Component.InvokeAsync("Cart")
+<div class="dropdown ms-4">
+    <button class="btn btn-outline-light dropdown-toggle d-flex align-items-center"
+            type="button" id="userDropdownButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false">
+        <img src="~/Images/cat_icon.png" width="30" height="30"
+             alt="User" class="rounded-circle me-2" />
+        <span>User@gmail.com</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdownButton">
+        <li>
+            <div class="dropdown-item-text d-flex align-items-center">
+                <img src="~/Images/cat_icon.png"
+                     width="50" height="50" alt="User" class="rounded-circle me-2" />
+                <div>
+                    <strong>user@gmail.com</strong>
+                </div>
+            </div>
+        </li>
+        <li><hr class="dropdown-divider"></li>
+        <li>
+            <form id="logoutForm" class="m-0" asp-controller="Account" asp-action="LogOut" method="post">
+                <button type="submit" class="dropdown-item">
+                    <i class="bi bi-box-arrow-right"></i> Выйти
+                </button>
+            </form>
+        </li>
+    </ul>
+</div>
+<!-- Информация пользователя - конец -->
